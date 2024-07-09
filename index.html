@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Elite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            background-image: url(images1.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;   
+        }
+        .fustat-font {
+        font-family: "Fustat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        }
+        header {
+            background-image: url(images1.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            padding-top: 1%;
+            text-align: center;
+            position: relative;
+        }
+        header img.logo-left {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            height: 120px;
+        }
+        header img.logo-right {
+            position: absolute;
+            top: 10px;
+            right: 50px;
+            height: 120px;
+        }
+        header h1 {
+            margin: 0;
+            color: rgb(16 102 232);
+        }
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            color: rgb(16 102 232);
+        }
+        .welcome {
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .welcome h2 {
+            color: rgb(211 135 16);
+            margin-top: 0;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .team h2 {
+            text-align: center;
+            width: 100%;
+            font-size: 40px;
+            font-family: 'Fustat', sans-serif;
+            margin-top: 0;
+        }
+        .team .member {
+            background-color: #000000;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 322px;
+            color: rgb(256,256,256);
+        }
+        .team .member img {
+            border-radius: 50%;
+            height: 193px;
+            width: 196px;
+        }
+        .footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+            .team .member {
+                width: 80%;
+            }
+        }
+        .member:hover {
+            background-color: #f4f4f4;
+            width: 330px;
+            height: auto;
+            transition: 0.5s;
+            background-color: #faff6cb3;
+            color: rgb(11, 5, 95);
+        }
+        .gallery-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery-section h2 {
+            font-size: 40px;
+            margin-top: 0;
+            font-family: 'Fustat', sans-serif;
+            
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            border-radius: 5px;
+            height: 200px;
+            width: 350px;
+            margin: 10px;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery img {
+                margin: 5px 0;
+            }
+        }
+        .desc {
+            font-size: 20px;
+            /* suggest a superb font */
+            font-family: 'Fustat', sans-serif;
+            color: #000;
+            padding-inline: 20px;
+        }
+        .thought-for-the-day {
+            padding: 20px;
+            padding-inline: 20%;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: none;
+            /* border: 1px solid #ddd; */
+            /* border-radius: 10px; */
+        }
+        .thought-for-the-day h2 {
+            color: rgb(0, 0, 0);
+            margin-top: 0;
+        }
+        .thought-for-the-day p {
+            font-style: italic;
+            color: #333;
+        }
+        .thought-for-the-day span {
+            font-weight: bold;
+            color: #ffc003;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Company Logo" class="logo-left">
+        <img src="logo2.png" alt="Another Logo" class="logo-right">
+        <h1><img src="title.png" height="8%" width="28%"></h1>
+        <p><img src="tagline.png" height="8%" width="28%"></p>
+    </header>
+    <section class="welcome">
+        <!-- <h2>Hello Dreamers!</h2> -->
+        <p class="desc" style="font-family: Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333;">
+            We are "<b>The Elite,</b>" a dynamic team of seven individuals driven by the desire to excel and make a difference. 
+            United by our participation in the Empower workshop, we are on a mission to enhance our social involvement and unleash 
+            our collective potential. Each member of The Elite brings a unique set of talents and skills to the table, creating
+             a diverse and powerful synergy. Whether it's in leadership, creativity, technical prowess, or strategic thinking,
+              our team is equipped to tackle any challenge and conquer the game.
+            </p>
+
+    </section>
+    <section class="team">
+        <h2>OUR TEAM</h2>
+        <div class="member">
+            <img src="21.png" alt="Profile Image">
+            <h3>Arjun C</h3>
+            <p>Kannur</p>
+            <p>Captain</p>
+            <p>Enthusiastic</p>
+        </div>
+        <!-- Repeat the above block for each team member -->
+        <div class="member">
+            <img src="22.png" alt="Profile Image">
+            <h3>Raveena</h3>
+            <p>Ernakulam</p>
+            <p>Vice Captain</p>
+            <p>Vibrant</p>
+        </div>
+        <div class="member">
+            <img src="23.png" alt="Profile Image">
+            <h3>Shreishta</h3>
+            <p>Ernakulam</p>
+            <p>Team Member</p>
+            <p>Elegant</p>
+        </div>
+        <div class="member">
+            <img src="24.png" alt="Profile Image">
+            <h3>Aiswarya</h3>
+            <p>Thrissur</p>
+            <p>Team Member</p>
+            <p>Energetic</p>
+        </div>
+        <div class="member">
+            <img src="25.png" alt="Profile Image">
+            <h3>Micah</h3>
+            <p>Ernakulam</p>
+            <p>Team Member</p>
+            <p>Singer</p>
+        </div>
+        <div class="member">
+            <img src="26.png" alt="Profile Image">
+            <h3>Adarsh</h3>
+            <p>Thrippunithara</p>
+            <p>Team Member</p>
+            <p>Obedient</p>
+        </div>
+        <div class="member">
+            <img src="27.png" alt="Profile Image">
+            <h3>Littania</h3>
+            <p>Thrissur</p>
+            <p>Team Member</p>
+            <p>Bold</p>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <h2>GALLERY</h2>
+        <div class="gallery">
+            <!-- <img src="gallery1.png" alt="Tag Line"> -->
+            
+            <img src="f2.jpg" alt="Gallery Image 2">
+            <!-- <img src="2.jpg" alt="Greetings"> -->
+            <img src="f3.jpg" width="130" height="220" alt="Gallery Image 3">
+            <!-- <img src="f4.jpg" alt="Gallery Image 4"> -->
+             
+            <img src="f1.jpg" alt="Gallery Image 1">
+            <video width="130" height="220" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>            
+        </div>
+    </section>
+</section>
+<br><br>
+<section class="thought-for-the-day">
+    <h1>THOUGHT FOR THE DAY</h1>
+    <p>"BE THE CHANGE THAT YOU WISH TO SEE IN THE WORLD."
+        <br><br><span>
+            - Mahatma Gandhi
+            </span></p>
+</section>
+<section class="thought-for-the-day">
+    <h1>JOIN US</h1>
+    <p>Whether you're a fellow participant, a supporter, or someone looking to be inspired, 
+        we invite you to follow our journey. Together, we can push boundaries, break barriers,
+         and achieve greatness.
+        <br><br><span>
+            Welcome to The Elite. Let's conquer the game.
+            </span></p>
+</section>
+<br><br>
+
+
+    <footer class="footer">
+        <!-- <p>Contact us:</p>
+        <a href="mailto:adastrarcss@gmail.com">Mail</a> -->
+        <p>Follow us:</p>
+        <a href="https://www.instagram.com/__the.elites_/?igsh=MWZzMXJ4Y2IwZjEyZA%3D%3D" target="_blank">Instagram</a>
+        <!-- <a href="https://www.facebook.com/share/uP7VWQ8iGv89mZ9z/?mibextid=qi2Omg" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">X</a>
+        <a href="https://www.reddit.com" target="_blank">Reddit</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.whatsapp.com/channel/0029VaeLz8QDDmFSfYr0330V" target="_blank">WhatsApp</a>
+        <a href="https://www.threads.net/@ad_astra_rcss" target="_blank">Threads</a>
+        <a href="mailto:adastrarcss@gmail.com">Mail Us</a> -->
+        <p>&copy; 2024 george_k_saji. All rights reserved.</p>
+    </footer>
+</body>
+</html>
